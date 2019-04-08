@@ -5,14 +5,14 @@ metadata:
 spec:
   replicas: 3
   selector:
-    matchlabels:
+    matchLabels:
       app: test-pod
   template:
     metadata:
       labels:
         app: test-pod
     spec:
-      container:
+      containers:
       - name: python-http-server
         image: python:2.7
         command: ["/bin/bash"]
